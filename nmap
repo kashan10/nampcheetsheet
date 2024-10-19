@@ -1,3 +1,13 @@
+Identify all active hosts in a network 
+nmap -sP <target_IP>/Subnet 
+Do a Stelth Scan, Invading firewall, IDS/IPS 
+nmap -sS -p 80, 443 <target_IP>/Subnet 
+Identify the OS of the machine hosting a DB To check target with open DB port (3306 or 1433): 
+nmap -sV IP/subnet
+or
+nmap -A IP/subnetornmap -p3306,1433 IP/subnet and check relative info about OS. 
+Locate IP address of the machine with RDP open port 
+nmap -Pn -p -sV 3389 <target_IP>
 Scan subnet or target filtering for LDAP port (389): 
 nmap -p389 -sV -iL <target_list> -> if we've more targets IP 
 or 
